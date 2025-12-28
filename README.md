@@ -4,8 +4,8 @@
  To create a C function that reads a txt file line by line for a given buffer_size, this function is going to be very useful in future projects;
 
 ## Must have
-   Its necessary to undertsand well the open and read funcions;
-   Understand is a static variable;
+  -Its necessary to undertsand well the open and read funcions;
+  -Understand is a static variable;
 
 ## How to use it
   Clone this repo
@@ -65,5 +65,10 @@ Since the buffer is a static variable, this means that it keeps its value in bet
       }
       buffer[j] = '\0';
       return (line);
-    ```
-  
+   ```
+
+  ## Conclusion
+
+   -This project was essential to fully understand how file descriptors, the read system call, and static variables work together in C. Implementing get_next_line required careful memory management, proper handling        of partial reads, and ensuring that no data is lost between function calls.
+
+   -The main challenge was preserving leftover data between reads while avoiding memory leaks. Using a static buffer allowed the function to resume reading exactly where it stopped, making the implementation               efficient and reliable even with very small BUFFER_SIZE values.
