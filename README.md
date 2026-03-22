@@ -1,8 +1,5 @@
 # Get_Next_Line
 
-## What is this project?
- To create a C function that reads a txt file line by line for a given buffer_size, this function is going to be very useful in future projects;
-
 ## Must have
   -Its necessary to undertsand well the open and read funcions;
   -Understand is a static variable;
